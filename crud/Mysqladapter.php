@@ -75,9 +75,9 @@
         //perform delete statement 
         public function delete ($table,$where='')
         {
-            $query='DELETE FROM' .$table .(($where) ? 'WHERE' .$where : '');
+            $query='DELETE FROM ' .$table .(($where) ? ' WHERE ' .$where : '');
             $this->query($query);
-            return $this->getAffectedRow();
+            return $this->getAffectedRows();
         }
 
         //perform update statement 
