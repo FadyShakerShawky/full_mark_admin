@@ -77,7 +77,7 @@
         {
             $query='DELETE FROM' .$table .(($where) ? 'WHERE' .$where : '');
             $this->query($query);
-            return $this->getAffectedRow();
+            return $this->getAffectedRows();
         }
 
         //perform update statement 
@@ -91,7 +91,7 @@
             $set=implode(',' , $set);
             $query='UPDATE' .$table .'SET' .$set .(($where)? 'WHERE' .$where : '');
             $this->query($query);
-            return $this->getAffectedRow();
+            return $this->getAffectedRows();
         }
         //fetch single row from current result set (as associative array)
         public function fetch()
