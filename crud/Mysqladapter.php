@@ -89,7 +89,7 @@
                 $set[]=$field . '=' .$this->quoteValue($value);
             }
             $set=implode(',' , $set);
-            $query='UPDATE' .$table .'SET' .$set .(($where)? 'WHERE' .$where : '');
+            $query='UPDATE ' .$table .' SET ' .$set .(($where)? ' WHERE ' .$where : '');
             $this->query($query);
             return $this->getAffectedRows();
         }
