@@ -121,52 +121,21 @@ if ($userData === null){
                                         <span class="col-6">Last modification date</span>
                                         <span class="col-6"><?php echo $userData["modification-date"];
                                         ?></span>
+
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-header">
-                                <strong class="card-title">Actions</strong>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <span class="col-12 my-2 px-4">
-                                        <form action="" method="post" class="row flex-nowrap">
-                                            <label for="new-fname">Change first name : </label>
-                                            <input type="text" name="new-fname" class="mx-2" />
-                                            <input type="submit" value="Change" />
-                                        </form>
-                                    </span>
-                                    <span class="col-12 my-2 px-4">
-                                        <form action="" method="post" class="row flex-nowrap">
-                                            <input type="button" value="Change last name" />
-                                            <span>
-                                                <input type="text" name="new-lname" disabled class="mx-2" />
-                                            </span>
-                                            <input type="submit" value="Change" disabled />
-                                        </form>
-                                    </span>
-                                    <span class="col-12 my-2 px-4">
-                                        <form action="" method="post" class="row flex-nowrap">
-                                            <input type="button" value="Change email" />
-                                            <span>
-                                                <input type="text" name="new-email" disabled class="mx-2" />
-                                            </span>
-                                            <input type="submit" value="Change" disabled />
-                                        </form>
-                                    </span>
-                                    <span class="col-12 my-2 px-4">
-                                        <form action="" method="post" class="row flex-nowrap">
-                                            <input type="button" value="Verify the account" />
-                                        </form>
+                                    <span class="col-12 text-right">
+                                        <a href="/full_mark_admin/student-edit.php?id=<?php echo $userData["u_id"] ?>"
+                                            class="btn btn-warning ml-auto">Edit
+                                            student</a>
+                                        <a href="/full_mark_admin/student-delete.php?id=<?php echo $userData["u_id"]?>"
+                                            class=" btn
+                                            btn-danger">Delete student</a>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div><!-- .animated -->
         </div><!-- .content -->
