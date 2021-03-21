@@ -5,3 +5,4 @@ if(!isset( $_GET["id"])){
 };
 $user = new User();
 $user->deleteUser( $_GET["id"]);
+header('Location: /full_mark_admin/view-edit-students');

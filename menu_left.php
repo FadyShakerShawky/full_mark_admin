@@ -10,7 +10,7 @@
 <body>
     <!-- Left Panel -->
 
-    <aside id="left-panel" class="left-panel">
+    <aside id="left-panel" class="left-panel pt-4">
         <nav class="navbar navbar-expand-sm navbar-default">
 
             <div class="navbar-header">
@@ -18,8 +18,7 @@
                     aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.php"><img src="images/logo.png" alt="Logo"></a>
-                <a class="navbar-brand hidden" href="index.php"><img src="images/logo2.png" alt="Logo"></a>
+                <h3 class="my-2"><a href="/full-mark">Full Mark</a></h3>
             </div>
 
             <div id="main-menu" class="main-menu collapse navbar-collapse">
