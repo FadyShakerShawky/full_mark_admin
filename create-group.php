@@ -54,7 +54,7 @@
             <div class="col-sm-4">
                 <div class="page-header float-left">
                     <div class="page-title">
-                        <h1>View & Edit Corses</h1>
+                        <h1>View & Edit Groups</h1>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                     <div class="page-title">
                         <ol class="breadcrumb text-right">
                             <li><a href="index.php">Dashboard</a></li>
-                            <li class="active">Courses data</li>
+                            <li class="active">Groups data</li>
                         </ol>
                     </div>
                 </div>
@@ -77,27 +77,73 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                Add <strong>Courses</strong>
+                                Add <strong>Group</strong>
                             </div>
-                                <div class="card-body card-block">
-                                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                            <div class="card-body card-block">
+                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label class=" form-control-label">Static</label>
+                                        </div>
+                                        <div class="col-12 col-md-9">
+                                            <p class="form-control-static">Groups</p>
+                                        </div>
+                                    </div>
                                     <div class="row form-group">
                                         <div class="col col-md-3"><label for="text-input"
-                                            class=" form-control-label">Course Name</label>
+                                                class=" form-control-label">Maximum of students in group</label>
                                         </div>
-                                    <div class="col-12 col-md-9"><input type="text" id="text-input"
-                                        name="text-input" placeholder="First Name" class="form-control">
+                                        <div class="col-12 col-md-9"><input type="number" id="text-input" min="1"
+                                                name="text-input" class="form-control"></div>
                                     </div>
-                                </div>
 
                                     <div class="row form-group">
-                                        <div class="col col-md-3"><label for="textarea-input"
-                                            class=" form-control-label">Description</label>
+                                        <div class="col col-md-3"><label for="text-input"
+                                                class=" form-control-label">Start Date</label>
                                         </div>
-                                        <div class="col-12 col-md-9"><textarea name="textarea-input" id="textarea-input"
-                                            rows="9" placeholder="Content..." class="form-control"></textarea>
-                                        </div>
+                                        <div class="col-12 col-md-9"><input type="date" id="text-input"
+                                                name="text-input" class="form-control"></div>
                                     </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input"
+                                                class=" form-control-label">End Date</label>
+                                        </div>
+                                        <div class="col-12 col-md-9"><input type="date" id="text-input"
+                                                name="text-input" class="form-control"></div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input"
+                                                class=" form-control-label">Start Date</label>
+                                        </div>
+                                        <div class="col-12 col-md-9"><input type="time" id="text-input"
+                                                name="text-input" class="form-control"></div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input"
+                                                class=" form-control-label">End Date</label>
+                                        </div>
+                                        <div class="col-12 col-md-9"><input type="time" id="text-input"
+                                                name="text-input" class="form-control"></div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input"
+                                                class=" form-control-label">Numbers of lectures</label>
+                                        </div>
+                                        <div class="col-12 col-md-9"><input type="number" id="text-input" min="1"
+                                                name="text-input" class="form-control"></div>
+                                    </div>
+
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input"
+                                                class=" form-control-label">Price</label>
+                                        </div>
+                                        <div class="col-12 col-md-9"><input type="text" id="text-input" 
+                                                name="text-input" class="form-control"></div>
+                                    </div>
+
                                    
                             <div class="card-footer">
                                 <button type="submit" class="btn btn-primary btn-sm">
